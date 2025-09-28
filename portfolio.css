@@ -219,16 +219,16 @@ p {
 }
 
 /* About - Second */
-#about.second {
+#about-second {
     margin-top: 60px;
 }
 
-#about.second h2 {
+#about-second h2 {
     text-align: center;
     margin-bottom: 30px;
 }
 
-#about.second .first {
+#about-second .first {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -236,36 +236,25 @@ p {
     flex-wrap: wrap;
 }
 
-#about.second .pfp {
+#about-second .pfp {
     flex: 1;
     max-width: 380px;
     border-radius: 10px;
     overflow: hidden;
 }
 
-#about.second .pfp img {
+#about-second .pfp img {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-#about.second .abt-cont {
+#about-second .abt-cont {
     flex: 2;
     text-align: left;
 }
 
-#about.second .abt-cont h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-#about.second .abt-cont h4 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    color: #007bff;
-}
-
-#about.second .abt-cont p {
+#about-second .abt-cont p {
     font-size: 1rem;
     line-height: 1.6;
     color: #444;
@@ -273,20 +262,17 @@ p {
 }
 
 @media (max-width: 768px) {
-    #about.second .first {
+    #about-second .first {
         flex-direction: column;
         text-align: center;
     }
-
-    #about.second .abt-cont {
+    #about-second .abt-cont {
         text-align: center;
     }
-
-    #about.second .pfp {
+    #about-second .pfp {
         max-width: 70%;
     }
 }
-
 
 /* Education Section */
 #education {
@@ -466,4 +452,9 @@ footer p:last-child {
         height: auto !important;
         max-height: 320px;
     }
+}
+
+#education, #skills, #projects, #contact, footer {
+    max-width: 100%;
+    overflow-x: hidden;
 }
