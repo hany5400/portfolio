@@ -464,33 +464,20 @@ footer p:last-child {
     }
   }
 
-  /* === Final Fix for Section Spacing & Width === */
-section {
-    padding: 35px 20px !important;
-    max-width: 950px !important;
-    margin: 0 auto 25px auto !important; 
+/* === Fix Spacing Between Project Images (My Work) === */
+.project-image img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .project-image img:last-child {
+    margin-bottom: 0;
   }
   
   @media (max-width: 768px) {
-    section {
-      padding: 25px 15px !important;
-      max-width: 95% !important;
+    .project-image img {
+      margin-bottom: 25px; 
     }
   }
-
-  /* === Fix for Project Images on Mobile === */
-@media (max-width: 768px) {
-  .project-image {
-    margin-bottom: 15px;
-  }
-
-  .project-image img {
-    display: block;
-    width: 100%;
-    border-radius: 8px;
-  }
-
-  .project-content {
-    gap: 20px !important;
-  }
-}
