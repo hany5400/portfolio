@@ -453,7 +453,7 @@ footer p:last-child {
     #skills,
     #projects,
     #contact {
-      max-width: 900px;
+      max-width: 1080px;
       margin: 50px auto;
       padding: 60px 20px;
     }
