@@ -124,6 +124,7 @@ nav ul li a.active {
     }
 }
 
+
 /* Sections */
 section {
     padding: 60px 20px;
@@ -218,17 +219,8 @@ p {
     }
 }
 
-/* About - Second */
-#about-second {
-    margin-top: 60px;
-}
-
-#about-second h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#about-second .first {
+/* About Second Section */
+#about-second .about-second-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -254,15 +246,9 @@ p {
     text-align: left;
 }
 
-#about-second .abt-cont p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #444;
-    font-size: 18px;
-}
-
+/* Responsive */
 @media (max-width: 768px) {
-    #about-second .first {
+    #about-second .about-second-row {
         flex-direction: column;
         text-align: center;
     }
@@ -271,6 +257,7 @@ p {
     }
     #about-second .pfp {
         max-width: 70%;
+        margin: 0 auto;
     }
 }
 
@@ -283,6 +270,7 @@ p {
     margin-bottom: 50px;
     margin-top: 20px;
   }
+
   
   #education h2 {
     text-align: center;
@@ -458,3 +446,34 @@ footer p:last-child {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+/* ====== Fix for Sections Width on Laptop ====== */
+@media (min-width: 992px) {
+    #education,
+    #skills,
+    #projects,
+    #contact {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 60px 20px;
+    }
+  
+    footer {
+      max-width: 900px;
+      margin: 50px auto;
+    }
+  }
+
+  /* === Final Fix for Section Spacing & Width === */
+section {
+    padding: 35px 20px !important;
+    max-width: 950px !important;
+    margin: 0 auto 25px auto !important; 
+  }
+  
+  @media (max-width: 768px) {
+    section {
+      padding: 25px 15px !important;
+      max-width: 95% !important;
+    }
+  }
