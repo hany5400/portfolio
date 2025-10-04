@@ -477,3 +477,20 @@ section {
       max-width: 95% !important;
     }
   }
+
+  /* === Fix for Project Images on Mobile === */
+@media (max-width: 768px) {
+  .project-image {
+    margin-bottom: 15px;
+  }
+
+  .project-image img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .project-content {
+    gap: 20px !important;
+  }
+}
